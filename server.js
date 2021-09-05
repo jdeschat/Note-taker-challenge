@@ -1,7 +1,6 @@
 const fs = require('fs');
 const path = require('path');
 const express = require('express');
-// const { animals } = require('./data/animals');
 
 const PORT = process.env.PORT || 3001;
 const app = express();
@@ -37,29 +36,12 @@ app.get('*', (req, res) => {
 });
 
 
-// app.get('*', (req, res) => {
-//     res.sendFile(path.join(__dirname, './public/index.html'));
-// });
-
 // app.get('/api/notes/:id', (req, res) => {
 //     const result = findById(req.params.id, animals);
 //     if (result) {
 //         res.json(result);
 //     } else {
 //         res.send(404);
-//     }
-// });
-
-// app.post('/api/animals', (req, res) => {
-//     // set id based on what the next index of the array will be
-//     req.body.id = animals.length.toString();
-
-//     // if any data in req.body is incorrect, send 400 error back
-//     if (!validateAnimal(req.body)) {
-//         res.status(400).send('The animal is not properly formatted.');
-//     } else {
-//         const animal = createNewAnimal(req.body, animals);
-//         res.json(animal);
 //     }
 // });
 
