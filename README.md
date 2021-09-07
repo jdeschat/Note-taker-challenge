@@ -3,7 +3,7 @@
 ## Description
 This application is used to write and save notes. It uses Express.js back end and will save and retrive note data from a JSON file.
 
-![alt text](https://github.com/Note-taker-challenge/blob/main/img/note-taker.png)
+![alt text](https://github.com/jdeschat/Note-taker-challenge/blob/main/img/note-taker.png)
 
 ## User Story
 ```
