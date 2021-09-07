@@ -1,3 +1,5 @@
+// var uuidv1 = require('uuidv1')
+
 let noteTitle;
 let noteText;
 let saveNoteBtn;
@@ -92,6 +94,7 @@ const handleNoteDelete = (e) => {
   deleteNote(noteId).then(() => {
     getAndRenderNotes();
     renderActiveNote();
+    // uuidv1();
   });
 };
 
