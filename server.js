@@ -50,12 +50,13 @@ app.delete("/api/notes/:id", function (req, res) {
             dbJson.splice(i, 1);
 
             let noteJson = JSON.stringify(dbJson, null, 2);
-            fs.writeFileAsync("./db/db.json", noteJson).then(function () {
+            fs.writeFile("./db/db.json", noteJson, function (err) {
+                if (err) throw err;
                 console.log("Your note has been deleted!");
+                res.json(dbJson);
             });
         }
     }
-    res.json(dbJson);
 });
 
 app.listen(PORT, () => {
