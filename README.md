@@ -1,7 +1,9 @@
-# Note Taker Starter Code
+# Note Taker Challenge
 
 ## Description
 This application is used to write and save notes. It uses Express.js back end and will save and retrive note data from a JSON file.
+
+![alt text](https://github.com/Note-taker-challenge/blob/main/img/note-taker.png)
 
 ## User Story
 ```
@@ -40,12 +42,12 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 7. You can delete notes by hitting the trash icon beside the note you want to delete
 
 ## Contributors
-To contribute to Professional-README-generator, clone this repo locally and commit your code on a separate branch.
+To contribute to Note-taker-challenge, clone this repo locally and commit your code on a separate branch.
   
 Contributors:
 
-<a href="https://github.com/jdeschat/Team_profile_generator/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=jdeschat/Team_profile_generator" />
+<a href="https://github.com/jdeschat/Note-taker-challenge/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=jdeschat/Note-taker-challenge" />
 </a>
 
 Made with [contributors-img](https://contrib.rocks).

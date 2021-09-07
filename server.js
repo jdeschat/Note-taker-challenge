@@ -50,7 +50,7 @@ app.delete("/api/notes/:id", function (req, res) {
             dbJson.splice(i, 1);
 
             let noteJson = JSON.stringify(dbJson, null, 2);
-            writeFileAsync("./db/db.json", noteJson).then(function () {
+            fs.writeFileAsync("./db/db.json", noteJson).then(function () {
                 console.log("Your note has been deleted!");
             });
         }
