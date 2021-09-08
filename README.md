@@ -71,6 +71,10 @@ Made with [contributors-img](https://contrib.rocks).
 - CSS
 - JavaScript
 - Bootstrap
+- Node.js
+- Express.js
+- JSON
+- Heroku
 
 ## Questions
 My Github username is jdeschat, which can be accessed here https://github.com/jdeschat/Note-taker-challenge.
