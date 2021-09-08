@@ -5,6 +5,17 @@ This application is used to write and save notes. It uses Express.js back end an
 
 ![alt text](https://github.com/jdeschat/Note-taker-challenge/blob/main/img/note-taker.png)
 
+## Table of Contents
+- [Description](#description)
+- [User Story](#user-story)
+- [Acceptance Criteria](#acceptance-criteria)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributors](#contributors)
+- [Tests](#tests)
+- [Technology Used](#technology-used)
+- [Questions](#questions)
+
 ## User Story
 ```
 AS A small business owner
@@ -54,6 +65,12 @@ Made with [contributors-img](https://contrib.rocks).
 
 ## Tests
 ![GitHub license](https://img.shields.io/badge/test-100%25-success)
+
+## Technology Used
+- HTML 5
+- CSS
+- JavaScript
+- Bootstrap
 
 ## Questions
 My Github username is jdeschat, which can be accessed here https://github.com/jdeschat/Note-taker-challenge.

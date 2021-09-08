@@ -27,8 +27,8 @@ app.get('/api/notes', (req, res) => {
 app.post('/api/notes', (req, res) => {
     const dataNotes = fs.readFileSync(path.join(__dirname, './db/db.json'), "utf-8");
     const parseNotes = JSON.parse(dataNotes);
+    req.body.id = uuidv1()
     parseNotes.push(req.body);
-    // id: uuidv1();
 
     fs.writeFileSync(path.join(__dirname, './db/db.json'), JSON.stringify(parseNotes), "utf-8");
     res.json("You have successfully added a note!");
@@ -44,12 +44,12 @@ app.delete("/api/notes/:id", function (req, res) {
     let deletedNote = parseInt(req.params.id);
     console.log(deletedNote);
 
-
     for (let i = 0; i < dbJson.length; i++) {
         if (deletedNote === dbJson[i].id) {
             dbJson.splice(i, 1);
 
             let noteJson = JSON.stringify(dbJson, null, 2);
+            console.log(noteJson);
             fs.writeFile("./db/db.json", noteJson, function (err) {
                 if (err) throw err;
                 console.log("Your note has been deleted!");
